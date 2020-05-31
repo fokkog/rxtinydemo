@@ -6,12 +6,12 @@ import { map, concatMap, takeUntil } from 'rxjs/operators';
 	var rect = container.getBoundingClientRect();
 	var sprite = document.getElementById('sprite');
 
-	var downs$ = fromEvent(sprite, "mousedown");
-	var moves$ = fromEvent(container, "mousemove");
+	var down$ = fromEvent(sprite, "mousedown");
+	var move$ = fromEvent(container, "mousemove");
 	var up$ = fromEvent(container, "mouseup");
 
-	downs$.pipe(
-		concatMap(down => moves$.pipe(
+	down$.pipe(
+		concatMap(down => move$.pipe(
 			takeUntil(up$),
 			map(move => ({left: move.pageX - down.offsetX, top: move.pageY - down.offsetY}))
 		))
