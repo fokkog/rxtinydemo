@@ -6,11 +6,11 @@
     "start": "webpack-dev-server --mode development --content-base ./src"
   },
   "dependencies": {
-    "rxjs": "^6.5.5",
-    "webpack": "^4.43.0",
+    "rxjs": "^6.6.3",
+    "webpack": "^4.44.2",
     "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   }
 }
