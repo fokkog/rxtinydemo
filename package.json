@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --content-base ./src"
+    "start": "webpack-dev-server --mode development"
   },
   "dependencies": {
     "rxjs": "^6.6.3",
-    "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack": "^5.53.0",
+    "webpack-dev-server": "^4.2.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.8.0"
   }
 }
