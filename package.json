@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "rxjs": "^6.6.3",
-    "webpack": "^5.53.0",
+    "webpack": "^5.76.0",
     "webpack-dev-server": "^4.2.1"
   },
   "devDependencies": {
